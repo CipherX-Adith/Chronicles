@@ -1,7 +1,7 @@
 {
-  "name": "mace-confessions",
+  "name": "untold-letterbox",
   "version": "1.0.0",
-  "description": "MACE Confessions — Anonymous College Confession Platform & Editorial Instagram Publisher",
+  "description": "Untold Letterbox — Anonymous Letterbox Platform & Editorial Instagram Publisher",
   "scripts": {
     "install:all": "npm install --prefix backend && npm install --prefix frontend",
     "db:setup": "npm run prisma:push --prefix backend && npm run prisma:seed --prefix backend",
@@ -9,7 +9,7 @@
     "dev:frontend": "npm run dev --prefix frontend",
     "build": "npm run build --prefix backend && npm run build --prefix frontend"
   },
-  "keywords": ["mace", "confessions", "anonymous", "college", "react", "express", "prisma"],
+  "keywords": ["untoldletterbox", "letters", "confessions", "anonymous", "react", "express", "prisma"],
   "author": "",
   "license": "ISC"
 }

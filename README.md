@@ -1,7 +1,7 @@
-# MACE Confessions
+# Untold Letterbox
 
 > **"Say it. Leave it here."**  
-> An intimate, anonymous college confession platform and editorial publishing pipeline for Mar Athanasius College of Engineering.
+> An intimate, anonymous letterbox platform and editorial publishing pipeline.
 
 ---
 
@@ -9,16 +9,16 @@
 
 **The website is primarily a beautiful place to write. Instagram is the public distribution channel.**
 
-MACE Confessions is designed like a physical letter drop combined with a high-end independent editorial magazine. There are **no accounts, no passwords, no student IDs, no profiles, no public comment feeds, and zero IP address logging**. 
+Untold Letterbox is designed like a physical letter drop combined with a high-end independent editorial magazine. There are **no accounts, no passwords, no student IDs, no profiles, no public comment feeds, and zero IP address logging**. 
 
-Students write anonymously; the editorial admin team privately reviews submissions, ensures community safety, and exports crisp 1080 × 1350 (4:5 portrait) Instagram-ready visuals.
+Writers drop notes anonymously; the editorial admin team privately reviews submissions, ensures community safety, and exports crisp 1080 × 1350 (4:5 portrait) Instagram-ready visuals.
 
 ---
 
 ## 🏛️ System Architecture
 
 ```text
-Student (Campus Web)
+Writer (Web Client)
         │
         ▼ (POST /api/submissions)
 Express REST API (Rate limiting, Zod validation, Zero PII logging)
@@ -95,7 +95,7 @@ Now open **http://localhost:5180** in your browser.
 ## 🔑 Admin Credentials (Pre-seeded)
 
 - **URL**: `http://localhost:5180/#admin`
-- **Email**: `admin@mace.edu`
+- **Email**: `admin@untoldletterbox.com`
 - **Password**: `admin_password_123`
 
 *(You can customize these credentials in `backend/.env`)*
@@ -105,11 +105,11 @@ Now open **http://localhost:5180** in your browser.
 ## 📸 Instagram Post Generator
 
 1. Log into the **Admin Deck** at `/#admin`.
-2. Review pending confessions.
+2. Review pending letters & confessions.
 3. Click **"📸 GENERATE INSTAGRAM POST"** on any approved note.
 4. The system dynamically renders a **1080 × 1350 (4:5 portrait)** graphic with auto-wrapped text, optimal font sizing, and brand styling.
 5. Click **"📥 DOWNLOAD INSTAGRAM POST (.PNG)"** and **"📋 COPY INSTAGRAM CAPTION"**.
-6. Upload to the official MACE Instagram account and click **"MARK AS POSTED"**.
+6. Upload to the official Instagram account and click **"MARK AS POSTED"**.
 
 ---
 

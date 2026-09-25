@@ -7,7 +7,7 @@ dotenv.config();
 const prisma = new PrismaClient();
 
 async function main() {
-  const adminEmail = process.env.ADMIN_EMAIL || 'admin@mace.edu';
+  const adminEmail = process.env.ADMIN_EMAIL || 'admin@untoldletterbox.com';
   const adminPassword = process.env.ADMIN_PASSWORD || 'admin_password_123';
 
   console.log(`Seeding database with admin: ${adminEmail}`);
@@ -23,7 +23,7 @@ async function main() {
       data: {
         email: adminEmail,
         passwordHash,
-        name: 'MACE Editorial Admin',
+        name: 'Untold Letterbox Admin',
       },
     });
     console.log('Created default admin successfully.');

@@ -50,7 +50,7 @@ To: ${toFull}
 
 Say it. Leave it here.
 Link in bio to drop an anonymous note.
-#MACE #MACEConfessions #CampusNotes #Anonymous`;
+#UntoldLetterbox #Confessions #Anonymous #Letters`;
 
   useEffect(() => {
     if (canvasRef.current) {

@@ -20,7 +20,7 @@ export const requireAdmin = (
   }
 
   const token = authHeader.split(' ')[1];
-  const secret = process.env.JWT_SECRET || 'mace_confessions_jwt_secret_super_secure_key_2026';
+  const secret = process.env.JWT_SECRET || 'untold_letterbox_jwt_secret_super_secure_key_2026';
 
   try {
     const decoded = jwt.verify(token, secret) as { id: string; email: string };

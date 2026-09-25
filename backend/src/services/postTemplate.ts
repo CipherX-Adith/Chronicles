@@ -112,7 +112,7 @@ To: ${toStr}
 
 Say it. Leave it here.
 Link in bio to leave an anonymous note.
-#MACE #MACEConfessions #CampusNotes #Anonymous`;
+#UntoldLetterbox #Confessions #Anonymous #Letters`;
 
   return {
     publicId: submission.publicId,

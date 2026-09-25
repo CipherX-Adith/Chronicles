@@ -48,7 +48,7 @@ app.use(express.urlencoded({ extended: true, limit: '64kb' }));
 app.get('/api/health', (_req: Request, res: Response) => {
   res.json({
     status: 'ok',
-    service: 'mace-confessions-api',
+    service: 'untold-letterbox-api',
     time: new Date().toISOString(),
   });
 });
@@ -72,7 +72,7 @@ app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
 if (process.env.NODE_ENV !== 'test') {
   app.listen(Number(PORT), '0.0.0.0', () => {
     console.log(`===========================================`);
-    console.log(` MACE Confessions Backend API running`);
+    console.log(` Untold Letterbox Backend API running`);
     console.log(` Local:   http://localhost:${PORT}`);
     console.log(` Network: http://0.0.0.0:${PORT}`);
     console.log(` Mode:    ${process.env.NODE_ENV || 'development'}`);

@@ -40,7 +40,7 @@ router.post('/login', authLimiter, async (req: Request, res: Response): Promise<
       return;
     }
 
-    const secret = process.env.JWT_SECRET || 'mace_confessions_jwt_secret_super_secure_key_2026';
+    const secret = process.env.JWT_SECRET || 'untold_letterbox_jwt_secret_super_secure_key_2026';
     const token = jwt.sign(
       { id: admin.id, email: admin.email, name: admin.name },
       secret,

@@ -1,7 +1,7 @@
 {
-  "name": "mace-confessions-backend",
+  "name": "untold-letterbox-backend",
   "version": "1.0.0",
-  "description": "Backend API for MACE Confessions",
+  "description": "Backend API for Untold Letterbox",
   "main": "dist/server.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
@@ -12,7 +12,7 @@
     "prisma:push": "prisma db push",
     "prisma:seed": "tsx prisma/seed.ts"
   },
-  "keywords": ["confessions", "anonymous", "mace", "api"],
+  "keywords": ["confessions", "letters", "anonymous", "untoldletterbox", "api"],
   "author": "",
   "license": "ISC",
   "dependencies": {

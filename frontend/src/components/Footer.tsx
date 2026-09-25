@@ -9,12 +9,12 @@ export const Footer: React.FC<FooterProps> = ({ onNavigateToAdmin }) => {
     <footer className="site-footer">
       <div className="container footer-inner">
         <div>
-          <span>MACE CONFESSIONS</span>
+          <span>UNTOLD LETTERBOX</span>
           <span style={{ margin: '0 8px', opacity: 0.4 }}>·</span>
           <span style={{ color: 'var(--muted-light)' }}>NO ACCOUNTS · NO PROFILES · 100% ANONYMOUS</span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <span>MAR ATHANASIUS COLLEGE OF ENGINEERING</span>
+          <span>UNTOLD LETTERBOX ARCHIVE</span>
           {onNavigateToAdmin && (
             <button
               onClick={onNavigateToAdmin}

@@ -16,10 +16,10 @@ export const Navbar: React.FC<NavbarProps> = ({ currentTab, onNavigate }) => {
         }}
         className="brand-link"
       >
-        <div className="brand-mark">M</div>
+        <div className="brand-mark">U</div>
         <div className="brand-text">
-          <span className="brand-title">MACE CONFESSIONS</span>
-          <span className="brand-subtitle">ANONYMOUS CAMPUS SPACE</span>
+          <span className="brand-title">UNTOLD LETTERBOX</span>
+          <span className="brand-subtitle">ANONYMOUS OPEN SPACE</span>
         </div>
       </a>
 

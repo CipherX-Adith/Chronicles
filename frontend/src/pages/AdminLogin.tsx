@@ -59,7 +59,7 @@ export const AdminLogin: React.FC<AdminLoginProps> = ({
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="admin@mace.edu"
+              placeholder="admin@untoldletterbox.com"
               required
             />
           </div>

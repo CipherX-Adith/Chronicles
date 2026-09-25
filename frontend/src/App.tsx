@@ -16,7 +16,7 @@ export const App: React.FC = () => {
 
   // Admin Auth State
   const [adminToken, setAdminToken] = useState<string | null>(() => {
-    return sessionStorage.getItem('mace_admin_token');
+    return sessionStorage.getItem('untold_admin_token');
   });
   const [adminUser, setAdminUser] = useState<any>(null);
 
@@ -43,7 +43,7 @@ export const App: React.FC = () => {
         .getAdminMe(adminToken)
         .then((res) => setAdminUser(res.admin))
         .catch(() => {
-          sessionStorage.removeItem('mace_admin_token');
+          sessionStorage.removeItem('untold_admin_token');
           setAdminToken(null);
           setAdminUser(null);
         });
@@ -70,14 +70,14 @@ export const App: React.FC = () => {
   };
 
   const handleAdminLogin = (token: string, admin: any) => {
-    sessionStorage.setItem('mace_admin_token', token);
+    sessionStorage.setItem('untold_admin_token', token);
     setAdminToken(token);
     setAdminUser(admin);
     setCurrentTab('admin');
   };
 
   const handleAdminLogout = () => {
-    sessionStorage.removeItem('mace_admin_token');
+    sessionStorage.removeItem('untold_admin_token');
     setAdminToken(null);
     setAdminUser(null);
     setCurrentTab('home');

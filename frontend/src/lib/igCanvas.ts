@@ -78,17 +78,17 @@ export function drawInstagramPost(
   ctx.font = 'bold 22px "Space Grotesk", sans-serif';
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
-  ctx.fillText('M', cardX + pad + 22, currentY + 23);
+  ctx.fillText('U', cardX + pad + 22, currentY + 23);
 
   // Brand Titles
   ctx.textAlign = 'left';
   ctx.fillStyle = '#111719';
   ctx.font = '700 20px "Space Grotesk", sans-serif';
-  ctx.fillText('MACE CONFESSIONS', cardX + pad + 58, currentY + 16);
+  ctx.fillText('UNTOLD LETTERBOX', cardX + pad + 58, currentY + 16);
 
   ctx.fillStyle = '#77736b';
   ctx.font = '500 13px "DM Mono", monospace';
-  ctx.fillText('ANONYMOUS CAMPUS NOTES', cardX + pad + 58, currentY + 36);
+  ctx.fillText('ANONYMOUS NOTES & LETTERS', cardX + pad + 58, currentY + 36);
 
   // Right Reference Pill
   ctx.textAlign = 'right';
@@ -296,12 +296,12 @@ export async function openInstagramPosting(
   if (navigator.canShare) {
     try {
       const blob = await getCanvasBlob(canvas);
-      const file = new File([blob], `mace-confession-${publicId.toLowerCase()}.png`, {
+      const file = new File([blob], `untoldletterbox-${publicId.toLowerCase()}.png`, {
         type: 'image/png',
       });
       if (navigator.canShare({ files: [file] })) {
         await navigator.share({
-          title: `MACE Confession ${publicId}`,
+          title: `Untold Letterbox ${publicId}`,
           text: captionText,
           files: [file],
         });
@@ -315,7 +315,7 @@ export async function openInstagramPosting(
   }
 
   // 2. Fallback: Save image to device downloads / photos
-  exportCanvasAsPNG(canvas, `mace-confession-${publicId.toLowerCase()}.png`);
+  exportCanvasAsPNG(canvas, `untoldletterbox-${publicId.toLowerCase()}.png`);
 
   // 3. Direct device redirect to Instagram
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);

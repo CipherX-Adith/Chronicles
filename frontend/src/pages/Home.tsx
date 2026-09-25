@@ -16,7 +16,7 @@ export const Home: React.FC<HomeProps> = ({
       <section className="hero-section">
         <div className="hero-grid">
           <div>
-            <span className="eyebrow">MACE CONFESSIONS</span>
+            <span className="eyebrow">UNTOLD LETTERBOX</span>
             <h1 className="hero-title">
               <span>Say it.</span>
               <span>Leave it</span>
@@ -90,7 +90,7 @@ export const Home: React.FC<HomeProps> = ({
             <div className="step-number">04 — SHARE</div>
             <h3 className="step-title">Share</h3>
             <p className="step-desc">
-              Selected confessions are formatted into editorial graphics and published to the campus Instagram page.
+              Selected confessions are formatted into editorial graphics and published to the community Instagram page.
             </p>
           </div>
         </div>
@@ -103,7 +103,7 @@ export const Home: React.FC<HomeProps> = ({
             <span className="eyebrow">RESPECT & SAFETY</span>
             <h3>Community Standards</h3>
             <p>
-              MACE Confessions exists for heartfelt notes, shared humor, and campus moments.
+              Untold Letterbox exists for heartfelt notes, shared humor, and unspoken words.
             </p>
             <button
               onClick={onNavigateToGuidelines}

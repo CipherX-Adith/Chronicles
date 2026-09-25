@@ -12,7 +12,7 @@ export const Guidelines: React.FC<GuidelinesProps> = ({ onNavigateToWrite }) => 
         Community Guidelines
       </h1>
       <p style={{ fontSize: '18px', color: 'var(--ink-secondary)', lineHeight: '1.6', marginBottom: '36px' }}>
-        MACE Confessions is created to give voice to unspoken thoughts, shared campus stories, gratitude, and good-natured memories. To protect everyone at Mar Athanasius College of Engineering, all submissions follow these core standards.
+        Untold Letterbox is created to give voice to unspoken thoughts, shared stories, gratitude, and good-natured memories. To protect everyone, all submissions follow these core standards.
       </p>
 
       <div style={{ display: 'grid', gap: '20px', marginBottom: '40px' }}>
