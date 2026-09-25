@@ -1194,3 +1194,48 @@ select:focus {
     bottom: -10px;
   }
 }
+
+/* Site Footer */
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 24px 0 32px;
+  margin-top: 60px;
+  background-color: var(--paper);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  transition: color 0.15s ease;
+}
+
+.footer-right:hover {
+  color: var(--ink);
+}
+
+@media (max-width: 768px) {
+  .footer-inner {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
